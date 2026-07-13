@@ -386,7 +386,7 @@
       <span id="cidadeInfo">Três Lagoas - MS</span>
     </div>
     <div class="info-row">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+
     </div>
   </section>
 
@@ -405,7 +405,6 @@
     whatsappMessage: "Olá! Vi seu cartão digital e quero fazer um pedido.",
     instagramHandle: "renatabezerra.doceria", // sem o @
     cidade: "Três Lagoas - MS",
-    horario: "Seg a Sáb, 8h às 18h"
   };
 
   // monta o link do whatsapp com a mensagem já preenchida
@@ -413,7 +412,6 @@
   document.getElementById('whatsBtn').href = whatsUrl;
   document.getElementById('instaBtn').href = `https://instagram.com/${CONFIG.instagramHandle}`;
   document.getElementById('cidadeInfo').textContent = CONFIG.cidade;
-  document.getElementById('horarioInfo').textContent = CONFIG.horario;
 
   // revela as seções conforme aparecem na tela
   const reveal = (el, delay=0) => {
